@@ -1509,8 +1509,11 @@ paths:
               properties:
                 name:
                   type: string
+                  description: Name for the newly restored Postgres database.
                 restore_target:
                   type: string
+                  format: date-time
+                  description: The RFC 3339-formatted timestamp for the point in time at which to recover.
                 pg_config:
                   type: object
                   example:
